@@ -117,7 +117,7 @@ export default {
   vertical-align: middle;
 }
 
-.page-apps {
+.page-tasksmanager {
   padding: 30px;
 
 }
