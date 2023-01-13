@@ -32,7 +32,7 @@
     bottom: 0;
     margin-top: 0;
     position: fixed;
-    top: 0;
+    top: $header-height;
     box-shadow: $vertical-menu-box-shadow;
     padding: 0 0 calc(#{$header-height} + 25px) 0;
     transition: all .1s ease-out;
@@ -83,7 +83,7 @@
             }
 
             &[data-bs-toggle=collapse] {
-                &:after {
+                &:before {
                     display: block;
                     content: "\F0142";
                     font-family: 'Material Design Icons';
@@ -91,7 +91,7 @@
                     transition: transform .2s;
                     font-size: 1.05rem;
                     position: absolute;
-                    right: 18px;
+                    left: 5px;
                     color: $vertical-menu-title-color;
                 }
 
@@ -191,7 +191,7 @@
 
 .navbar-brand-box {
     padding: 0 1.3rem;
-    text-align: center;
+    text-align: left;
     transition: all .1s ease-out;
 
     @media (max-width: 767.98px) {
@@ -1034,7 +1034,7 @@
 .menu-title {
     letter-spacing: .05em;
     cursor: default;
-    font-size: 11px;
+    font-size: 18px;
     text-transform: uppercase;
     color: $vertical-menu-title-color;
     font-weight: $font-weight-semibold;

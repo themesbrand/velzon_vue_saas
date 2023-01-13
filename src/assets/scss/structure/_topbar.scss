@@ -16,7 +16,7 @@
     }
 
     @media (min-width: 768px) {
-        left: $vertical-menu-width;
+        left: 0;
     }
 }
 
@@ -378,7 +378,7 @@
     &[data-sidebar-size="sm-hover"] {
         #page-topbar {
             @media (min-width: 768px) {
-                left: $vertical-menu-width-sm;
+                left: 0;
             }
         }
     }
@@ -386,7 +386,7 @@
     &[data-sidebar-size="md"] {
         #page-topbar {
             @media (min-width: 768px) {
-                left: $vertical-menu-width-md;
+                left: 0;
             }
         }
     }

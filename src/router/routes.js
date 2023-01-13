@@ -2,6 +2,23 @@ import store from "@/state/store";
 
 export default [
   {
+    path: "/home",
+    name: "home",
+    component: () => import("../views/home/index.vue"),
+    children: [
+    ],
+    meta: {
+      title: "Home",
+    },
+  },
+  {
+    path : "/tasksmanager",
+    component : () => import("../views/home/tasksmanager.vue"),
+    meta: {
+      title: "Tasks Manager",
+    },
+  },
+  {
     path: "/login",
     name: "login",
     component: () => import("../views/account/login.vue"),
@@ -1200,5 +1217,11 @@ export default [
     name: "Leaflet Maps",
     meta: { title: "Leaflet Maps", authRequired: true },
     component: () => import("../views/maps/leaflet/index"),
+  },
+  {
+    path: "/:any",
+    name: "404",
+    meta: { title: "Home", authRequired: true },
+    component: () => import("../views/home/index.vue"),
   },
 ];

@@ -6,14 +6,13 @@
   import NavBar from "@/components/nav-bar";
   import Menu from "@/components/menu.vue";
   import RightBar from "@/components/right-bar";
-  import Footer from "@/components/footer";
   localStorage.setItem('hoverd',false);
   
   /**
    * Vertical layout
    */
   export default {
-    components: { NavBar, RightBar, Footer, SimpleBar, Menu },
+    components: { NavBar, RightBar, SimpleBar, Menu },
     data() {
       return {
         isMenuCondensed: false,
@@ -86,27 +85,7 @@
         <div class="app-menu navbar-menu">
           <!-- LOGO -->
           <div class="navbar-brand-box">
-            <!-- Dark Logo-->
-            <router-link to="/" class="logo logo-dark">
-              <span class="logo-sm">
-                <img src="@/assets/images/logo-sm.png" alt="" height="22" />
-              </span>
-              <span class="logo-lg">
-                <img src="@/assets/images/logo-dark.png" alt="" height="17" />
-              </span>
-            </router-link>
-            <!-- Light Logo-->
-            <router-link to="/" class="logo logo-light">
-              <span class="logo-sm">
-                <img src="@/assets/images/logo-sm.png" alt="" height="22" />
-              </span>
-              <span class="logo-lg">
-                <img src="@/assets/images/logo-light.png" alt="" height="17" />
-              </span>
-            </router-link>
-            <button type="button" class="btn btn-sm p-0 fs-20 header-item float-end btn-vertical-sm-hover" id="vertical-hover" @click="initActiveMenu">
-              <i class="ri-record-circle-line"></i>
-            </button>
+            
           </div>
   
           <SimpleBar id="scrollbar" class="h-100" ref="scrollbar">
@@ -126,10 +105,9 @@
         <div class="page-content">
           <!-- Start Content-->
           <b-container fluid>
-            <slot />
+            <slot></slot>
           </b-container>
         </div>
-        <Footer />
       </div>
       <RightBar />
     </div>

@@ -13,20 +13,20 @@
   --#{$prefix}vertical-menu-title-color:             #919da9;
   
   //vertical dark
-  --#{$prefix}vertical-menu-bg-dark:                 #38454a;
-  --#{$prefix}vertical-menu-item-color-dark:         #a1b7bf;
-  --#{$prefix}vertical-menu-item-hover-color-dark:   #{$white};
-  --#{$prefix}vertical-menu-item-active-color-dark:  #{$white};
+  --#{$prefix}vertical-menu-bg-dark:                 #eceff1;
+  --#{$prefix}vertical-menu-item-color-dark:         black;
+  --#{$prefix}vertical-menu-item-hover-color-dark:   black;
+  --#{$prefix}vertical-menu-item-active-color-dark:  rgb(74, 201, 131);
   --#{$prefix}vertical-menu-sub-item-color-dark:     #a1b7bf;
   --#{$prefix}vertical-menu-sub-item-hover-color-dark: #{$white};
   --#{$prefix}vertical-menu-sub-item-active-color-dark: #{$white};
-  --#{$prefix}vertical-menu-title-color-dark:         #a1b7bf;
+  --#{$prefix}vertical-menu-title-color-dark:         #9fa0a1;
 
   // Topbar - (Default Light)
   --#{$prefix}header-bg:  #{$white};
   --#{$prefix}header-item-color:  #e9ecef;
   // Topbar - Dark
-  --#{$prefix}header-bg-dark:  #38454a;
+  --#{$prefix}header-bg-dark:  #bbdefb;
   --#{$prefix}header-item-color-dark:  #9ea9ad;
 
   // Topbar Search

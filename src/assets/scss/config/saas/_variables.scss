@@ -34,7 +34,7 @@ $vertical-menu-item-color:                        var(--#{$prefix}vertical-menu-
 $vertical-menu-item-hover-color:                  var(--#{$prefix}vertical-menu-item-hover-color);
 $vertical-menu-item-active-color:                 var(--#{$prefix}vertical-menu-item-active-color);
 $vertical-menu-item-padding-x:                    1.5rem;
-$vertical-menu-item-padding-y:                    0.625rem;
+$vertical-menu-item-padding-y:                    0.325rem;
 $vertical-menu-sub-item-font-size:                0.875rem;
 $vertical-menu-sub-item-font-family:              $font-family-primary;
 $vertical-menu-sub-item-color:                    var(--#{$prefix}vertical-menu-sub-item-color);
@@ -94,7 +94,7 @@ $twocolumn-menu-item-active-bg-dark:             var(--#{$prefix}twocolumn-menu-
 $twocolumn-menu-item-color-gradient:              rgba($white, 0.6);
 
 // Topbar - (Default Light)
-$header-height:                                    70px;
+$header-height:                                    40px;
 $header-bg:                                      var(--#{$prefix}header-bg);
 $header-item-color:                              var(--#{$prefix}header-item-color);
 

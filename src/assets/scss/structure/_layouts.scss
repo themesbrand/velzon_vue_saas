@@ -43,7 +43,14 @@
             }
         }
 
-        #page-topbar,
+        #page-topbar{
+            left: 0 !important;
+            max-width: calc(#{$boxed-layout-width});
+
+            @media (min-width: 768px) {
+                left: 0 !important;
+            }
+        }
         .footer {
             left: 0 !important;
             max-width: calc(#{$boxed-layout-width} - #{$vertical-menu-width-sm});
@@ -57,7 +64,15 @@
     &[data-sidebar-size="sm-hover-active"],
     &[data-sidebar-size="lg"] {
 
-        #page-topbar,
+
+        #page-topbar{
+            max-width: calc(#{$boxed-layout-width});
+
+            @media (min-width: 768px) {
+                left: 0 !important;
+            }
+        }
+        
         .footer {
             max-width: calc(#{$boxed-layout-width} - #{$vertical-menu-width});
 
@@ -69,7 +84,15 @@
 
     &[data-sidebar-size="md"] {
 
-        #page-topbar,
+
+        #page-topbar{
+            max-width: calc(#{$boxed-layout-width});
+
+            @media (min-width: 768px) {
+                left: 0 !important;
+            }
+        }
+        
         .footer {
             max-width: calc(#{$boxed-layout-width} - #{$vertical-menu-width-md});
 
