@@ -139,7 +139,7 @@ export default {
   height: 70px;
   background-color: #cbddf7;
   border-radius: 7px;
-  border-left: #ffe699 solid 8px;
+  /* border-left: #ffe699 solid 8px; */
   padding: 5px 15px;
   font-size: 18px;
   text-align: center;

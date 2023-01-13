@@ -13,6 +13,7 @@ export default [
   },
   {
     path : "/tasksmanager",
+    name : "tasksmanager",
     component : () => import("../views/home/tasksmanager.vue"),
     meta: {
       title: "Tasks Manager",

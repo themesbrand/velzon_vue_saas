@@ -30,6 +30,9 @@ export default {
 
   },
   methods: {
+    changeRoute( routeObj ){
+      this.$router.push(routeObj)
+    }
   }
 };
 </script>
@@ -60,7 +63,7 @@ export default {
                       <b-col xl="6" v-for="(it, idx) in item" :key="idx">
                         <b-row>
                           <b-col v-for="(ii, id) in it" :key="id" lg="4" class="mt-3">
-                            <div class="box-item">
+                            <div class="box-item" v-on:click="changeRoute({ name: 'tasksmanager' })">
                               <span>{{ ii.title }}</span>
                             </div>
                           </b-col>
@@ -119,6 +122,7 @@ export default {
   display: table;
   min-width: 130px;
   overflow-y: hidden;
+  cursor: pointer;
 }
 
 @media (max-width: 1450px) {
