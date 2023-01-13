@@ -108,7 +108,7 @@ export default {
   padding-top: 9px;
 }
 
-.box-content .box-item {
+.page-apps .box-content .box-item {
   width: 100%;
   height: 70px;
   background-color: #cbddf7;

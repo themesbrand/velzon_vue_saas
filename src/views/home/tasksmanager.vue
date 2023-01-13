@@ -69,7 +69,7 @@ export default {
 
     <b-row>
       <b-col cols="12">
-        <div class="page-apps">
+        <div class="page-tasksmanager">
           <div class="box">
             <b-row>
               <b-col md="12">
@@ -139,7 +139,6 @@ export default {
   height: 70px;
   background-color: #cbddf7;
   border-radius: 7px;
-  /* border-left: #ffe699 solid 8px; */
   padding: 5px 15px;
   font-size: 18px;
   text-align: center;
