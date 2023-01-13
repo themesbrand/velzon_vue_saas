@@ -8,74 +8,46 @@ export default {
       title: "Home",
       items: [
         {
-          title: "sdfsdf",
+          title: "Data Models",
           infos: [
             {
-              title: "13123",
-              list: ["sdsdf", "sdfsdf", "sdfsdf"]
-            },
-            {
-              title: "13123",
-              list: ["sdsdf", "sdfsdf", "sdfsdf"]
+              title: "23 Fields",
+              list: ["Title", "Firstname", "Lastname", "Preferred Name", "Gender", "Occupation", "Click for more..."]
             }
           ]
         },
         {
-          title: "sdfsdf",
+          title: "Forms",
+          infos: [
+          ]
+        },
+        {
+          title: "Users",
           infos: [
             {
-              title: "13123",
-              list: ["sdsdf", "sdfsdf", "sdfsdf"]
-            },
-            {
-              title: "13123",
-              list: ["sdsdf", "sdfsdf", "sdfsdf"]
-            },
-            {
-              title: "13123",
-              list: ["sdsdf", "sdfsdf", "sdfsdf"]
+              title: "Accessed By",
+              list: ["Marketing team", "Finance Team"]
             }
           ]
         },
         {
-          title: "sdfsdf",
+          title: "Data Import",
           infos: [
             {
-              title: "13123",
-              list: ["sdsdf", "sdfsdf", "sdfsdf"]
-            },
-          ]
-        },
-        {
-          title: "sdfsdf",
-          infos: [
-            {
-              title: "13123",
-              list: ["sdsdf", "sdfsdf", "sdfsdf"]
-            },
-            {
-              title: "13123",
-              list: ["sdsdf", "sdfsdf", "sdfsdf"]
+              title: "Data Import",
+              list: ["On 23/10/2022", "On 12/09/2022"]
             }
           ]
         },
         {
-          title: "sdfsdf",
+          title: "Workflows",
           infos: [
             {
-              title: "13123",
-              list: ["sdsdf", "sdfsdf", "sdfsdf"]
+              title: "0 workflows",
+              list: []
             },
-            {
-              title: "13123",
-              list: ["sdsdf", "sdfsdf", "sdfsdf"]
-            },
-            {
-              title: "13123",
-              list: ["sdsdf", "sdfsdf", "sdfsdf"]
-            }
           ]
-        }
+        },
       ]
     };
   },
@@ -114,14 +86,14 @@ export default {
               <b-col md="12">
                 <div class="box-container">
                   <div class="box-content">
-                    <div class="container">
-                      <div class="row">
-                        <div class="col mt-3" v-for="(item, index) in items" :key="index">
-                          <div class="box-item mb-2">
-                            <span>{{ item.title }}</span>
-                          </div>
-                          <ul v-for="(item2, index2) in item.infos" :key="index2">
-                            <span>{{ item2.title }}</span>
+                    <div class="row">
+                      <div class="col mt-3" v-for="(item, index) in items" :key="index">
+                        <div class="box-item mb-2">
+                          <span style="lef">{{ item.title }}</span>
+                        </div>
+                        <div v-for="(item2, index2) in item.infos" :key="index2">
+                          <span style="margin-left: 10px;">{{ item2.title }}</span>
+                          <ul>
                             <li v-for="(item3, index3) in item2.list" :key="index3">
                               {{ item3 }}
                             </li>
